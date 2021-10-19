@@ -5,6 +5,7 @@ import Blogs from './Components/Home/Blogs/Blogs';
 import ContactUs from './Components/Home/ContactUs/ContactUs';
 import Home from './Components/Home/Home';
 import Login from './Components/Home/Login/Login';
+import PrivateRoute from './Components/Home/Login/PrivateRoute/PrivateRoute';
 import Register from './Components/Home/Register/Register';
 import Service from './Components/Home/Service/Service';
 import Services from './Components/Home/Services/Services';
@@ -13,12 +14,14 @@ import PrivacyAndPolicy from './Components/Others/PrivacyAndPolicy/PrivacyAndPol
 import TermsAndCondition from './Components/Others/TermsAndCondition/TermsAndCondition';
 import Footer from './Components/Shared/Footer/Footer';
 import Header from './Components/Shared/Header/Header';
+import AuthProvider from './Contexts/AuthProvider';
 
 
 function App() {
   return (
     <div className="App">
-      <Router>
+     <AuthProvider>
+     <Router>
       <Header></Header>
         <Switch>
           <Route exact path='/'>
@@ -31,9 +34,9 @@ function App() {
           <Route path='/services'>
             <Services></Services>
           </Route>
-          <Route path='/service/:serviceID'>
+          <PrivateRoute path='/service/:serviceID'>
             <Service></Service>
-          </Route>
+          </PrivateRoute>
           <Route path='/blogs'>
             <Blogs></Blogs>
           </Route>
@@ -61,6 +64,7 @@ function App() {
         </Switch>
         <Footer></Footer>
       </Router>
+     </AuthProvider>
     </div>
   );
 }

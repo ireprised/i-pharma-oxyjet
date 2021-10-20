@@ -5,7 +5,9 @@
         "price": "132",
         "description": "Oxyjet flow generator is a specially designed gas ejector produced from locally available materials, to minimize manufacturing complications .",
         "imageURL": "./images/services/1.png",
-        "img":"https://i.ibb.co/nD5tLsC/1.png"
+        "img":"https://i.ibb.co/nD5tLsC/1.png",
+        "details":"OxyJet, is a low-cost non-invasive ventilator to designed to treat Covid-19 patients. The device can provide 60 L/min of oxygen with up to 100% concentration without any electricity. Interim data of ongoing clinical trials have shown that its efficacy is non-inferior to traditional high-flow nasal cannula (HFNC) devices. However, OxyJet uses 30% less oxygen compared to HFNC devices for an equivalent clinical outcome. The device design has been open-sourced by the inventors.",
+        "media":"https://www.youtube.com/embed/rkkMQtud6NM"
     },
     {
         "id": "60",
@@ -13,7 +15,9 @@
         "price": "221",
         "description": "It is the heart of the flow generator ,It utilizes high pressure of the O2 source to accelerates the driving flow to a sonic/supersonic condition air",
         "imageURL": "./images/services/2.png",
-        "img":"https://i.ibb.co/R4Kwnvg/2.png"
+        "img":"https://i.ibb.co/R4Kwnvg/2.png",
+        "details":"This phase is a randomized controlled trial, designed to compare between HFNC and OxyJet CPAP on a total of 40 patients admitted to Dhaka Medical College Hospital (DMCH). Patients with %SpO2 between 85 â€“ 90% are enrolled who have failed to respond to 15L/m of oxygen.",
+        "media":"https://www.youtube.com/embed/wQwcsvbLWi8?autoplay=0&mute=1"
     },
     {
         "id": "68",
@@ -21,7 +25,9 @@
         "price": "105",
         "description": "w, using the relation (2.1.1) we have compute the minimum stagnation pressure required across any needle gauge for choked flow (M=1), ",
         "imageURL": "./images/services/3.png",
-        "img":"https://i.ibb.co/9hnPmW6/3.png"
+        "img":"https://i.ibb.co/9hnPmW6/3.png",
+        "details":"The Covid-19 pandemic has strained the hospital systems in many countries in the world, especially in the developing countries. Most hospital wards in developing countries cannot provide more than 15 liters/min of oxygen. This is not sufficient for many severe Covid-19 patients who need a high-flow nasal cannula (HFNC) or C-PAP ventilators. However, HFNC devices can cost up to $5000 and traditional C-PAP devices can cost up to $1000.",
+        "media":"https://www.youtube.com/embed/8vbxOkWEFlI"
     },
     {
         "id": "61",
@@ -29,7 +35,9 @@
         "price": "434",
         "description": "In our device setup, we have used the existing standard pressure regulator and flowmeter arrangements that come with the O2 source. Air blows in speedy way ",
         "imageURL": "./images/services/4.png",
-        "img":"https://i.ibb.co/g9vyHzk/4.png"
+        "img":"https://i.ibb.co/g9vyHzk/4.png",
+        "details":"At its core, OxyJet is a precision venturi-based system that uses the pressure of the medical oxygen source to generate a high-flow of air and oxygen mixture by the jet-mixing principle. It is easily manufacturable using 3D printing, CNC machining and combining available components in the market. Variants of the system can provide up to 100 L/m of flow if required. Non-vented C-PAP masks and HEPA filters are used in the system to reduce aerosolization.",
+        "media":"https://www.youtube.com/embed/2EpawGBZjUg"
     },
     {
         "id": "88",
@@ -37,7 +45,9 @@
         "price": "434",
         "description": "This adapter is used to connect our flow generator directly to any standard flowmeter. The metal knob at the top .",
         "imageURL": "./images/services/5.png",
-        "img":"https://i.ibb.co/FYL9xVf/5.png"
+        "img":"https://i.ibb.co/FYL9xVf/5.png",
+        "details":"In contrast, the OxyJet device itself only costs around $20 and with all accessories a full set can cost up to $200. Besides, HFNO devices operate on electric power, which is unreliable in many low-resource hospitals - whereas OxyJet does not require electric power. With shortage of Intensive Care Unit (ICU) beds, this is a major problem since intermediate forms of treatments are simply not available at an affordable cost.",
+        "media":"https://www.youtube.com/embed/ZTdZ_NVLqZ0"
     },
     {
         "id": "67",
@@ -45,6 +55,8 @@
         "price": "434",
         "description": "A custom-made two-way metal connector that has a chamber and inner threading that attaches the needle air-tightly with the DISS nipple adapter.",
         "imageURL": "./images/services/6.png",
-        "img":"https://i.ibb.co/1KsZMDw/6.png"
+        "img":"https://i.ibb.co/1KsZMDw/6.png",
+        "details":"Variants of the system can provide up to 100 L/m of flow if required. Non-vented C-PAP masks and HEPA filters are used in the system to reduce aerosolization. Pressure settings can be changed using a traditional PEEP valve between 5-20cm H2O. The device is manufactured using local 3D printing and workshop facilities.",
+        "media":"https://www.youtube.com/embed/BCY2W4U7YPY"
     }
 ]

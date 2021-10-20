@@ -3,7 +3,7 @@ import './TermsAndCondition.css'
 
 const TermsAndCondition = () => {
     return (
-        <div className='border border-success rounded-3 text-justify m-5 p-5 terms'>
+        <div className='border border-info rounded-3 text-justify m-5 p-5 terms'>
             <h2><strong>Terms and Conditions</strong></h2>
 
                     <p>Welcome to i-pharmacy!</p>

@@ -20,7 +20,7 @@ const Service = () => {
         <div>
             
         
-            <Row className="m-4">
+            <Row className="m-4 w-50 mx-auto">
                 <Col >
                     <Card bg="dark" text="light" className="shadow-lg">
                     <Card.Title className="text-center py-2">{findService?.name}</Card.Title>
@@ -28,9 +28,12 @@ const Service = () => {
                         <Card.Body>
                             <Card.Title> price : ${findService?.price}</Card.Title>
                             <Card.Text>
-                                {findService?.description}
+                                {findService?.details}
                             </Card.Text>
-                        </Card.Body>
+                            <div className="text-center">
+                            <iframe title="test" src={findService?.media} style={{border:"0px"}} name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px" className="text-center" allowfullscreen></iframe>
+                            </div>
+                             </Card.Body>
                     </Card>
                 </Col>
 

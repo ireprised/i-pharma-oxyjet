@@ -11,7 +11,7 @@ const Menu = () => {
         <div>
             <Navbar sticky="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand to="/#">i-Pharma</Navbar.Brand>
+                    <Navbar.Brand to="/home">i-Pharma</Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
@@ -20,6 +20,7 @@ const Menu = () => {
                     <Nav.Link className="text-info" as={NavLink} to='/blogs' exact>Blogs</Nav.Link>
                     <Nav.Link className="text-info" as={NavLink} to='/privacy' exact>Privacy</Nav.Link>
                     <Nav.Link className="text-info" as={NavLink} to='/terms' exact>Terms</Nav.Link>
+                    <Nav.Link className="text-info" as={NavLink} to='/contact-us' exact>Contact Us</Nav.Link>
                     
                 </Nav>
                 {user.displayName?<Navbar.Text className="text-info">

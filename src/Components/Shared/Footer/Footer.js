@@ -62,13 +62,11 @@ const Footer = () => {
                                 <h3>Useful Links</h3>
                             </div>
                             <ul>
-                                <li><Link to="#">Home</Link></li>
-                                <li><Link to="#">about</Link></li>
-                                <li><Link to="#">services</Link></li>
-                                <li><Link to="#">Contact</Link></li>
-                                <li><Link to="#">About us</Link></li>
-                                <li><Link to="#">Our Services</Link></li>
-                                
+                                <li><Link to="/home">Home</Link></li>
+                                <li><Link to="/contact-us">Contact</Link></li>
+                                <li><Link to="/about-us">About us</Link></li>
+                                <li><Link to="/blogs">Blogs</Link></li>
+                                <li><Link to="/services">Our Services</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -102,10 +100,10 @@ const Footer = () => {
                     <div className="col-xl-6 col-lg-6 d-none d-lg-block text-right">
                         <div className="footer-menu">
                             <ul>
-                                <li><Link to="#">Home</Link></li>
-                                <li><Link to="#">Terms</Link></li>
-                                <li><Link to="#">Privacy & Policy</Link></li>
-                                <li><Link to="#">Contact</Link></li>
+                                <li><Link to="/home">Home</Link></li>
+                                <li><Link to="/terms">Terms</Link></li>
+                                <li><Link to="/privacy">Privacy & Policy</Link></li>
+                                <li><Link to="/contact-us">Contact</Link></li>
                             </ul>
                         </div>
                     </div>

@@ -1,9 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import useFirebase from '../../../Hooks/UseFirebase';
+import { Link, useLocation, useHistory, useParams } from 'react-router-dom';
+import useAuth from '../../../Hooks/useAuth';
+
+
 
 const Login = () => {
-    const {signInWithGoogle} = useFirebase();
+    const { signInUsingGoogle } = useAuth();
+    const {serviceID} = useParams();
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_uri = location.state?.from || `/services/${serviceID}`;
+
+
+    const handleGoogleLogin = () => {
+        signInUsingGoogle()
+            .then(result => {
+                history.push(redirect_uri);
+            })
+    }
      return (
         <div>
             <section className="vh-100" style={{backgroundColor: '#eee'}}>
@@ -15,7 +29,7 @@ const Login = () => {
             <div className="row justify-content-center">
               <div className="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
 
-                <p className="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign IN</p>
+                <p className="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign In</p>
 
                 <form className="mx-1 mx-md-4">
 
@@ -44,7 +58,7 @@ const Login = () => {
                   </div>
 
                   <div className="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                    <button onClick={signInWithGoogle} type="button" className="btn btn-primary btn-lg"><i className="fab fa-google">Login</i></button>
+                    <button onClick={handleGoogleLogin} type="button" className="btn btn-primary btn-lg"><i className="fab fa-google">Login</i></button>
                   </div>
 
                   <div className="d-flex justify-content-center mx-4 mb-3 mb-lg-4">

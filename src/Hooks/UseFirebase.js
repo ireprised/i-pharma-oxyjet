@@ -1,56 +1,50 @@
-import { getAuth, GoogleAuthProvider,signInWithPopup,signOut,onAuthStateChanged } from "firebase/auth";
-import { useEffect, useState } from "react";
-import initializeAuthentication from "../firebase/firebase.config";
+import { useState, useEffect } from 'react';
+import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "firebase/auth";
+import initializeAuthentication from '../firebase/firebase.config';
+
 
 initializeAuthentication();
-const useFirebase =()=>{
-const auth = getAuth();
-const [user,setUser]= useState([]);
-const [isLoading, setIsLoading] = useState(true)
-   const signInWithGoogle = () => {
-    setIsLoading(true)
+
+const useFirebase = () => {
+    const [user, setUser] = useState({});
+    const [loading, setLoading] = useState(true)
+    const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
-    signInWithPopup(auth, googleProvider)
-    .then(result => {
-        const user = result.user;
-        setUser(user);
-        console.log(user);
-    })
-    .finally(()=>setIsLoading(false))
-    
-}
 
-//observe user state
-useEffect(()=>{
-  const unSubscribed = onAuthStateChanged(auth, user=>{
-        if(user){
-            setUser(user)
-        }
-        else{
-            setUser({})
-        }
-        setIsLoading(false)
-    })
-    return () => unSubscribed;
-},[])
-const logOut = () =>{
-    setIsLoading(true)
-    signOut(auth)
-    .then(()=>{})
-    .finally(()=>setIsLoading(false))
-}
+    const signInUsingGoogle = () => {
+        return signInWithPopup(auth, googleProvider)
+            .finally(() => { setLoading(false) });
+    }
 
-return {
-    user,
-    signInWithGoogle,
-    logOut,
-    isLoading
-    
+    const logOut = () => {
+        setLoading(true);
+        signOut(auth)
+            .then(() => {
+                setUser({})
+            })
+            .finally(() => setLoading(false))
+    }
 
-}
+    // observe whether user auth state changed or not
+    useEffect(() => {
+        const unsubscribe = onAuthStateChanged(auth, (user) => {
+            if (user) {
+                setUser(user);
+            }
+            else {
+                setUser({});
+            }
+            setLoading(false);
+        });
+        return () => unsubscribe;
+    }, [])
 
+    return {
+        user,
+        loading,
+        signInUsingGoogle,
+        logOut
+    }
 }
 
 export default useFirebase;
-
-

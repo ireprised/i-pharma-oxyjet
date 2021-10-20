@@ -1,44 +1,50 @@
 [
     {
-        "id": "60795d4e0489a32f948c4167",
+        "id": "89",
         "name": "OxyJet Flow Generator",
         "price": "132",
         "description": "Oxyjet flow generator is a specially designed gas ejector produced from locally available materials, to minimize manufacturing complications .",
-        "imageURL": "./images/services/1.png"
+        "imageURL": "./images/services/1.png",
+        "img":"https://i.ibb.co/nD5tLsC/1.png"
     },
     {
-        "id": "60795e440489a32f948c4168",
+        "id": "60",
         "name": "Primary Nozzle (needle)",
         "price": "221",
         "description": "It is the heart of the flow generator ,It utilizes high pressure of the O2 source to accelerates the driving flow to a sonic/supersonic condition air",
-        "imageURL": "./images/services/2.png"
+        "imageURL": "./images/services/2.png",
+        "img":"https://i.ibb.co/R4Kwnvg/2.png"
     },
     {
-        "id": "60795fc20489a32f948c4169",
+        "id": "68",
         "name": "DISS Nipple adapter",
         "price": "105",
         "description": "w, using the relation (2.1.1) we have compute the minimum stagnation pressure required across any needle gauge for choked flow (M=1), ",
-        "imageURL": "./images/services/3.png"
+        "imageURL": "./images/services/3.png",
+        "img":"https://i.ibb.co/9hnPmW6/3.png"
     },
     {
-        "id": "6079615d0489a32f948c416a",
+        "id": "61",
         "name": "Two-way Metal Connector",
         "price": "434",
         "description": "In our device setup, we have used the existing standard pressure regulator and flowmeter arrangements that come with the O2 source. Air blows in speedy way ",
-        "imageURL": "./images/services/4.png"
+        "imageURL": "./images/services/4.png",
+        "img":"https://i.ibb.co/g9vyHzk/4.png"
     },
     {
-        "id": "6079615d0489a32f948c416a",
+        "id": "88",
         "name": "Positive End-Expiratory Pressure (PEEP)",
         "price": "434",
         "description": "This adapter is used to connect our flow generator directly to any standard flowmeter. The metal knob at the top .",
-        "imageURL": "./images/services/5.png"
+        "imageURL": "./images/services/5.png",
+        "img":"https://i.ibb.co/FYL9xVf/5.png"
     },
     {
-        "id": "6079615d0489a32f948c416a",
+        "id": "67",
         "name": "CPAP mask/hood",
         "price": "434",
         "description": "A custom-made two-way metal connector that has a chamber and inner threading that attaches the needle air-tightly with the DISS nipple adapter.",
-        "imageURL": "./images/services/6.png"
+        "imageURL": "./images/services/6.png",
+        "img":"https://i.ibb.co/1KsZMDw/6.png"
     }
 ]

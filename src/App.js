@@ -46,12 +46,12 @@ function App() {
           <Route path='/contact-us'>
             <ContactUs></ContactUs>
           </Route>
-          <Route path='/terms'>
+          <PrivateRoute path='/terms'>
             <TermsAndCondition></TermsAndCondition>
-          </Route>
-          <Route path='/privacy'>
+          </PrivateRoute>
+          <PrivateRoute path='/privacy'>
             <PrivacyAndPolicy></PrivacyAndPolicy>
-          </Route>
+          </PrivateRoute>
           <Route path='/login'>
             <Login></Login>
           </Route>

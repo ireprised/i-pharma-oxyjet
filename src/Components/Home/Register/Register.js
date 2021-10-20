@@ -1,25 +1,29 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useHistory, useParams } from 'react-router-dom';
+import useAuth from '../../../Hooks/useAuth';
 
 
 const Register = () => {
-
+    const {createRegister} = useAuth();
+    const {serviceID} = useParams();
     const [email,setEmail] = useState('')
     const [password,setPassword] = useState('')
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_uri = location.state?.from || `/services/${serviceID}`;
+
+
         const handleEmailChange = e => {
             setEmail(e.target.value)
         }
         const handlePasswordChange = e => {
             setPassword(e.target.value)
         }
-        const handleRegistration = e => {   
-            console.log(email,password)
-        }
-
+        const handleRegistration = () => {   
+            createRegister(email,password)
+            history.push(redirect_uri)
             
-            
-          
-        
+        } 
         
     
     return (
@@ -41,7 +45,7 @@ const Register = () => {
                                 <form className="mx-1 mx-md-4" onSubmit={handleRegistration}>
 
                                 
-
+                                
                                 <div className="d-flex flex-row align-items-center mb-4">
                                     <i className="fas fa-envelope fa-lg me-3 fa-fw"></i>
                                     <div className="form-outline flex-fill mb-0">
@@ -68,7 +72,7 @@ const Register = () => {
                                     id="form2Example3c"
                                     />
                                     <label className="form-check-label" htmlFor="form2Example3">
-                                    I agree all statements in <a href="#!">Terms of service</a>
+                                    I agree all statements in <Link to="/terms">Terms of service</Link>
                                     </label>
                                 </div>
 

@@ -14,7 +14,7 @@ const Footer = () => {
                             <i className="fas fa-map-marker-alt"></i>
                             <div className="cta-text">
                                 <h4>Find us</h4>
-                                <span>1010 Avenue, sw 54321, chandigarh</span>
+                                <span>1010 Avenue, sw 54321, Dhaka</span>
                             </div>
                         </div>
                     </div>
@@ -23,7 +23,7 @@ const Footer = () => {
                             <i className="fas fa-phone"></i>
                             <div className="cta-text">
                                 <h4>Call us</h4>
-                                <span>9876543210 0</span>
+                                <span>88016111222333</span>
                             </div>
                         </div>
                     </div>
@@ -32,7 +32,7 @@ const Footer = () => {
                             <i className="far fa-envelope-open"></i>
                             <div className="cta-text">
                                 <h4>Mail us</h4>
-                                <span>mail@info.com</span>
+                                <span>mail@i-pharma.com</span>
                             </div>
                         </div>
                     </div>
@@ -43,17 +43,16 @@ const Footer = () => {
                     <div className="col-xl-4 col-lg-4 mb-50">
                         <div className="footer-widget">
                             <div className="footer-logo">
-                                <Link href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" className="img-fluid" alt="logo"/></Link>
+                                <h4> <span style={{color:"orange"}}>i</span> <span style={{color:"white"}}>-</span> <span style={{color:"aqua"}}>Pharma</span> </h4>
                             </div>
                             <div className="footer-text">
-                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                                elit,Lorem ipsum dolor sit amet.</p>
+                                <p className="text-white text-justify ">We are hereby to deliver world's most needy Medical Equipment in a very cheap rate </p>
                             </div>
                             <div className="footer-social-icon">
                                 <span>Follow us</span>
-                                <Link href="#"><i className="fab fa-facebook-f facebook-bg"></i></Link>
-                                <Link href="#"><i className="fab fa-twitter twitter-bg"></i></Link>
-                                <Link href="#"><i className="fab fa-google-plus-g google-bg"></i></Link>
+                                <Link to="#"><i className="fab fa-facebook-f facebook-bg"></i></Link>
+                                <Link to="#"><i className="fab fa-twitter twitter-bg"></i></Link>
+                                <Link to="#"><i className="fab fa-google-plus-g google-bg"></i></Link>
                             </div>
                         </div>
                     </div>
@@ -63,16 +62,13 @@ const Footer = () => {
                                 <h3>Useful Links</h3>
                             </div>
                             <ul>
-                                <li><Link href="#">Home</Link></li>
-                                <li><Link href="#">about</Link></li>
-                                <li><Link href="#">services</Link></li>
-                                <li><Link href="#">portfolio</Link></li>
-                                <li><Link href="#">Contact</Link></li>
-                                <li><Link href="#">About us</Link></li>
-                                <li><Link href="#">Our Services</Link></li>
-                                <li><Link href="#">Expert Team</Link></li>
-                                <li><Link href="#">Contact us</Link></li>
-                                <li><Link href="#">Latest News</Link></li>
+                                <li><Link to="#">Home</Link></li>
+                                <li><Link to="#">about</Link></li>
+                                <li><Link to="#">services</Link></li>
+                                <li><Link to="#">Contact</Link></li>
+                                <li><Link to="#">About us</Link></li>
+                                <li><Link to="#">Our Services</Link></li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -100,17 +96,16 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-xl-6 col-lg-6 text-center text-lg-left">
                         <div className="copyright-text">
-                            <p>Copyright &copy; 2018, All Right Reserved <Link href="#">i-PHARMA</Link></p>
+                            <p>Copyright &copy; 2018, All Right Reserved <Link to="#">i-PHARMA</Link></p>
                         </div>
                     </div>
                     <div className="col-xl-6 col-lg-6 d-none d-lg-block text-right">
                         <div className="footer-menu">
                             <ul>
-                                <li><Link href="#">Home</Link></li>
-                                <li><Link href="#">Terms</Link></li>
-                                <li><Link href="#">Privacy</Link></li>
-                                <li><Link href="#">Policy</Link></li>
-                                <li><Link href="#">Contact</Link></li>
+                                <li><Link to="#">Home</Link></li>
+                                <li><Link to="#">Terms</Link></li>
+                                <li><Link to="#">Privacy & Policy</Link></li>
+                                <li><Link to="#">Contact</Link></li>
                             </ul>
                         </div>
                     </div>

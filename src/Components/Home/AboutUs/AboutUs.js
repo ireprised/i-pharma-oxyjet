@@ -7,7 +7,7 @@ const AboutUs = () => {
             <div className="container">
                 <div className="row d-flex align-items-center">
                     <div className="col-md-6">
-                        <p className="fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet magnam aut quis numquam accusamus aspernatur mollitia vel beatae! Totam illo consequuntur sapiente, ex distinctio, ullam repellat cupiditate dolorem minus quasi assumenda quas fugit similique iste incidunt eius culpa numquam pariatur!</p>
+                        <p className="fs-4 text-justify">I-PHARMA is happily introduced their first ever ventilation machine developed by OXYJET team from BUET.  We are ready for all kinds of shipping and deliver all kinds of medical eqipment from over the world. There are several things we are going to introduce to whole world which are more important and innovative tech in medical field.</p>
                     </div>
                     <div className="col-md-6">
                         <img className="fluid w-75" src="./images/aboutus/aboutus.png" alt="" />
